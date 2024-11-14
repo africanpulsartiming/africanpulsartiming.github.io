@@ -3052,6 +3052,7 @@ input, select, textarea {
 					align-items: flex-end;
 					width:33em;
 				}
+        
 
 		@media screen and (max-width: 1680px) {
 

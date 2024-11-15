@@ -2170,6 +2170,10 @@ input, select, textarea {
 			display: block;
 		}
 
+    footer img{
+    max-width:10em;
+    }
+
 		.image.left, .image.right {
 			max-width: 30%;
 		}
@@ -2251,7 +2255,7 @@ input, select, textarea {
 			  .banner-text h3{
 				text-transform: uppercase;
 				margin-left:2px;
-				margin-top: -15px;
+				margin-top: -25px;
 				font-size: 1rem;
 				margin-bottom: 20px;
 				

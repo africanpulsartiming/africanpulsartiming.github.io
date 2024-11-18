@@ -3542,7 +3542,8 @@ input, select, textarea {
 		}
 
 		#banner.style2:after {
-      opacity:0.6;
+      background-color:#2a2f4a;
+      opacity:1;
       max-height:3.5em;
 		}
 

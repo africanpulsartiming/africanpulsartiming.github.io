@@ -67,7 +67,7 @@
 							</section>
               -->
 						<!-- Two -->
-							<section id="two" class="spotlights">
+			<!--				<section id="two" class="spotlights">
 
 								<section>
 									<a href="https://marisageyer.co.za/" class="image">
@@ -364,9 +364,11 @@
 										</div>
 									</div>
 								</section>
-							</section>
+							</section> 
+						-->
 
-
+							<section id="two" class="spotlights">
+              </section>
 				<!-- Footer -->
 
           <footer id="footer">
@@ -399,5 +401,34 @@ MathJax = {
   }
 };
       </script>
+    <script>
+  fetch('people.json')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('two');
+      data.forEach(person => {
+        const section = document.createElement('section');
+        section.innerHTML = `
+          <a href="${person.imageLink}" class="image">
+            <img src="${person.image}" alt="" data-position= "25% 25%" />
+          </a>
+          <div class="content">
+            <div class="inner">
+              <header class="major">
+               <a href="${person.imageLink}"><h3>${person.name}</h3></a>
+              </header>
+				<h5>${person.title}</h5>
+              <p>${person.institution}</p>
+            </div>
+          </div>
+        `;
+        container.appendChild(section);
+      });
+    })
+    .catch(error => {
+      console.error("Failed to load people.json:", error);
+      document.getElementById('people-sections').innerHTML = '<p>Could not load team data.</p>';
+    });
+</script>
 	</body>
 </html>

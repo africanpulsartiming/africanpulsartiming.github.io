@@ -1,0 +1,134 @@
+
+[
+  {
+    "name": "Marisa Geyer",
+    "image": "images/MGeyer_BG1.png",
+    "imageLink": "https://marisageyer.co.za/",
+    "title": "Chair, African Pulsar Timing",
+    "institution": "University of Cape Town",
+    "institutionLink": "https://marisageyer.co.za/"
+  },
+  {
+    "name": "Christo Venter",
+    "image": "images/CVenter_BG1.png",
+    "title": "Vice-Chair, African Pulsar Timing",
+    "institution": "North West University"
+  },
+  {
+    "name": "Sarah Buchner",
+    "image": "images/SBuchner.png",
+    "title":"",
+    "institution": "South African Radio Astronomy Observatory (SARAO)",
+    "institutionLink": "https://www.sarao.ac.za/"
+  },
+  {
+    "name": "Fernando Camilo",
+    "title":"",
+    "image": "images/FCamilo.png",
+    "institution": "South African Radio Astronomy Observatory (SARAO)",
+    "institutionLink": "https://www.sarao.ac.za/"
+  },
+  {
+    "name": "Innocent O. Eya",
+    "title":"",
+    "image": "images/IEya_BG1.png",
+    "institution": "University of Nigeria"
+  },
+  {
+    "name": "Yin-Zhe Ma",
+    "title":"",
+    "image": "images/YMa_BG1.png",
+    "institution": "Stellenbosch University"
+  },
+  {
+    "name": "Amanda Weltman",
+    "title":"",
+    "image": "images/Aweltman_BG1.png",
+    "institution": "University of Cape Town"
+  },
+  {
+    "name": "Michael Sarkis",
+    "title":"",
+    "image": "images/MSarkis_BG1.png",
+    "institution": "Post-doctoral fellow, Stellenbosch University"
+  },
+  {
+    "name": "Jaikhomba Singha",
+    "title":"",
+    "image": "images/JSingha_BG1.png",
+    "institution": "Post-doctoral fellow, University of Cape Town"
+  },
+  {
+    "name": "Prerna Rana",
+    "title":"",
+    "image": "images/PRana_BG1.png",
+    "institution": "Post-doctoral fellow, University of Cape Town"
+  },
+  {
+    "name": "Surajit Kalita",
+    "title":"",
+    "image": "images/Surajit_BG1.png",
+    "institution": "Post-doctoral fellow, University of Cape Town"
+  },
+  {
+    "name": "Isabella Rammala",
+    "title":"",
+    "image": "images/IRammala_BG1.png",
+    "institution": "Post-doctoral fellow, Max Planck Institute für Radioastronomie"
+  },
+  {
+    "name": "Kira Hanmer",
+    "title":"",
+    "image": "images/KHanmer_BG1.png",
+    "institution": "MSc candidate, University of Cape Town"
+  },
+  {
+    "name": "Kennedy Konga",
+    "title":"",
+    "image": "images/KKonga_BG1.png",
+    "institution": "University of Meru"
+  },
+  {
+    "name": "Zi Yan Yuwen",
+    "title":"",
+    "image": "images/Zi_BG1.png",
+    "institution": "PhD Candidate, Stellenbosch University"
+  },
+  {
+    "name": "Trevor Nyambe",
+    "title":"",
+    "image": "images/Trevor_BG1.png",
+    "institution": "MSc candidate, North West University"
+  },
+  {
+    "name": "Thulo Letsele",
+    "title":"",
+    "image": "images/Thulo_BG1.png",
+    "institution": "MSc candidate, North West University"
+  },
+  {
+    "name": "Venu Prayag",
+    "title":"",
+    "image": "images/VPrayag_BG1.png",
+    "institution": "PhD candidate, University of Cape Town"
+  },
+  {
+    "name": "Denisha Pillay",
+    "title":"",
+    "image": "images/DPillay_BG1.png",
+    "institution": "PhD candidate, Max Planck Institute für Radioastronomie"
+  },
+  {
+    "name": "Abigail Thambiran",
+    "title":"",
+    "image": "images/AThambiran.png",
+    "institution": "MSc candidate, University of Cape Town"
+  },
+  {
+    "name": "Atiqur Rahman",
+    "title":"",
+    "image": "images/ARahman_BG2.png",
+    "institution": "PhD candidate, University of Cape Town"
+  }
+]
+

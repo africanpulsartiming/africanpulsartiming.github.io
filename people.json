@@ -11,12 +11,15 @@
   {
     "name": "Christo Venter",
     "image": "images/CVenter_BG1.png",
+    "imageLink": "https://natural-sciences.nwu.ac.za/physics/christo-venter",
     "title": "Vice-Chair, African Pulsar Timing",
-    "institution": "North West University"
+    "institution": "North West University",
+    "institutionLink":"https://natural-sciences.nwu.ac.za/physics/christo-venter"
   },
   {
     "name": "Sarah Buchner",
     "image": "images/SBuchner.png",
+    "imageLink": "https://www.sarao.ac.za/people/sarah-buchner",
     "title":"",
     "institution": "South African Radio Astronomy Observatory (SARAO)",
     "institutionLink": "https://www.sarao.ac.za/"

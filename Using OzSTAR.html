@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<title>Using OzSTAR</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="Using Conda Env inside ozstar"><h1 id="Using Conda Env inside ozstar" class="header"><a href="#Using Conda Env inside ozstar">Using Conda Env inside ozstar</a></h1></div>
+
+<div id="Using Conda Env inside ozstar-Step 1"><h2 id="Step 1" class="header"><a href="#Using Conda Env inside ozstar-Step 1">Step 1</a></h2></div>
+<p>
+In Ozstar terminal interface write the following command to use <em>mamba</em>
+</p>
+<pre  bash>
+  ml mamba
+</pre>
+
+<div id="Using Conda Env inside ozstar-Step 2"><h2 id="Step 2" class="header"><a href="#Using Conda Env inside ozstar-Step 2">Step 2</a></h2></div>
+<p>
+By default, Conda places environments in the home directory in ~/.conda. 
+As you create new environments, the home directory disk quota will be exhausted very quickly. 
+To resolve this issue, we recommend changing where conda environments are created:
+</p>
+
+<pre  bash>
+conda config --env --prepend envs_dirs /path/to/my/project/on/fred/.conda/envs
+conda config --env --prepend pkgs_dirs /path/to/my/project/on/fred/.conda/pkgs
+</pre>
+
+<div id="Using Conda Env inside ozstar-Step 3"><h2 id="Step 3" class="header"><a href="#Using Conda Env inside ozstar-Step 3">Step 3</a></h2></div>
+
+<p>
+Finally, create e new environment
+</p>
+
+<pre  bash>
+conda create -n &lt;env-name&gt;
+</pre>
+
+<p>
+If you have a <em>.yml</em> file then you can use the following command
+</p>
+
+<pre  bash>
+conda env create -f environment.yml
+</pre>
+<p>
+More about <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually ">yml file</a>
+</p>
+
+
+<div id="Using Apptainer inside ozstar"><h1 id="Using Apptainer inside ozstar" class="header"><a href="#Using Apptainer inside ozstar">Using Apptainer inside ozstar</a></h1></div>
+<p>
+If you want to use apptainer, in that case, first you have to load the
+<em>apptainer</em> module by running the following command
+</p>
+
+<pre  bash>
+ml apptainer 
+</pre>
+
+<p>
+If you want to access the container shell
+</p>
+<pre  bash>
+apptainer shell your_apptainer.sif
+</pre>
+
+<p>
+if you want to create an instance of the apptainer then
+</p>
+<pre  bash>
+apptainer instance start your-apptainer.sif your_instance_name
+</pre>
+
+<p>
+you can check all the instances using
+</p>
+
+<pre  bash>
+apptainer instance list
+</pre>
+
+<p>
+To access an instance shell, run
+</p>
+
+<pre  bash>
+apptainer shell instance://your_instance_name
+</pre>
+
+<p>
+to stop an instance
+</p>
+<pre  bash>
+apptainer instance stop your_instance_name
+</pre>
+
+<p>
+To bind 
+</p>
+<pre  bash>
+apptainer instance start --bind $HOME/mydata:/data your_apptainer.sif your_instance_name
+</pre>
+
+</body>
+</html>

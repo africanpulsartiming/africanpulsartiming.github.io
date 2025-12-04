@@ -160,7 +160,8 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #9bf1ff !important;
+			color: #ff6d6d !important;
+      
 		}
 
 		a:active {
@@ -3286,14 +3287,14 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			-moz-transition: opacity 2.5s ease;
-			-webkit-transition: opacity 2.5s ease;
-			-ms-transition: opacity 2.5s ease;
-			transition: opacity 2.5s ease;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			-moz-transition: opacity .75s ease;
+			-webkit-transition: opacity .75s ease;
+			-ms-transition: opacity .75s ease;
+			transition: opacity .75s ease;
+			-moz-transition-delay: 0.35s;
+			-webkit-transition-delay: 0.35s;
+			-ms-transition-delay: 0.35s;
+			transition-delay: 0.35s;
 			-moz-animation: none;
 			-webkit-animation: none;
 			-ms-animation: none;
@@ -3975,20 +3976,22 @@ input, select, textarea {
 			}
 
 	body.is-ie #menu {
-		background: rgba(42, 47, 74, 0.975);
+		background: rgba(42, 47, 74, 0);
 	}
-
+/* To make the website blue when menu is active
 	body.is-menu-visible #wrapper {
 		-moz-filter: blur(0.5em);
 		-webkit-filter: blur(0.5em);
 		-ms-filter: blur(0.5em);
 		filter: blur(0.5em);
 	}
-
+*/
 	body.is-menu-visible #menu {
 		pointer-events: auto;
 		opacity: 1;
 		visibility: visible;
+		max-width: 20%;
+		margin: 0 0 0 80%;
 	}
 
 		body.is-menu-visible #menu .inner {

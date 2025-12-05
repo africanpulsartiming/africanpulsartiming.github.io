@@ -3990,8 +3990,8 @@ input, select, textarea {
 		pointer-events: auto;
 		opacity: 1;
 		visibility: visible;
-		max-width: 20%;
-		margin: 0 0 0 80%;
+		max-width: 50%;
+		margin: 0 0 0 50%;
 	}
 
 		body.is-menu-visible #menu .inner {

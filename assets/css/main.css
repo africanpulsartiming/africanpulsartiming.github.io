@@ -160,7 +160,8 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #9bf1ff !important;
+			color: #ff6d6d !important;
+      
 		}
 
 		a:active {
@@ -2225,11 +2226,34 @@ input, select, textarea {
 
 			  
 			
+			  .banner {
+				position: relative;
+				overflow: hidden;
+			  }
+			  
+			  .banner #main {
+				position: relative;
+				width: 100%;
+				padding: 0;
+				margin: 0;
+				overflow: hidden;
+			  }
+			  
 			  .banner video {
-				/* Make video to at least 100% wide and tall */
+				/* Make video responsive */
+				width: 100%;
+				height: auto;
 				min-width: 100%; 
 				min-height: 100%; 
 				object-fit: cover;
+				max-width: 100%;
+				display: block;
+			  }
+			  
+			  @media screen and (max-width: 736px) {
+				.banner video {
+					min-height: 50vh;
+				}
 			  }
 			  
 			  .banner-text {
@@ -2250,6 +2274,7 @@ input, select, textarea {
 				margin-top: -20px;
 				background-color: #ffffff;
 				width:930px;
+				max-width: 100%;
 			  }
 
 			  .banner-text h3{
@@ -2259,6 +2284,61 @@ input, select, textarea {
 				font-size: 1rem;
 				margin-bottom: 20px;
 				
+			  }
+			  
+			  /* Responsive styles for mobile devices */
+			  @media screen and (max-width: 736px) {
+				.banner-text {
+					top: 20%;
+					left: 5%;
+					right: 5%;
+					padding: 0 1em;
+				}
+				
+				.banner-text h1 {
+					font-size: 2rem;
+					margin-bottom: 15px;
+					line-height: 1.2;
+				}
+				
+				.banner-text hr {
+					width: 100%;
+					max-width: 100%;
+					margin-top: -15px;
+				}
+				
+				.banner-text h3 {
+					font-size: 0.85rem;
+					margin-top: -20px;
+					margin-bottom: 15px;
+					line-height: 1.4;
+				}
+				
+				.banner-text p {
+					font-size: 0.9rem;
+				}
+			  }
+			  
+			  @media screen and (max-width: 480px) {
+				.banner-text {
+					top: 15%;
+					left: 3%;
+					right: 3%;
+				}
+				
+				.banner-text h1 {
+					font-size: 1.5rem;
+					margin-bottom: 10px;
+				}
+				
+				.banner-text hr {
+					margin-top: -10px;
+				}
+				
+				.banner-text h3 {
+					font-size: 0.75rem;
+					margin-top: -15px;
+				}
 			  }
 
 
@@ -3286,14 +3366,14 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			-moz-transition: opacity 2.5s ease;
-			-webkit-transition: opacity 2.5s ease;
-			-ms-transition: opacity 2.5s ease;
-			transition: opacity 2.5s ease;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			-moz-transition: opacity .75s ease;
+			-webkit-transition: opacity .75s ease;
+			-ms-transition: opacity .75s ease;
+			transition: opacity .75s ease;
+			-moz-transition-delay: 0.35s;
+			-webkit-transition-delay: 0.35s;
+			-ms-transition-delay: 0.35s;
+			transition-delay: 0.35s;
 			-moz-animation: none;
 			-webkit-animation: none;
 			-ms-animation: none;
@@ -3975,20 +4055,22 @@ input, select, textarea {
 			}
 
 	body.is-ie #menu {
-		background: rgba(42, 47, 74, 0.975);
+		background: rgba(42, 47, 74, 0);
 	}
-
+/* To make the website blue when menu is active
 	body.is-menu-visible #wrapper {
 		-moz-filter: blur(0.5em);
 		-webkit-filter: blur(0.5em);
 		-ms-filter: blur(0.5em);
 		filter: blur(0.5em);
 	}
-
+*/
 	body.is-menu-visible #menu {
 		pointer-events: auto;
 		opacity: 1;
 		visibility: visible;
+		max-width: 50%;
+		margin: 0 0 0 50%;
 	}
 
 		body.is-menu-visible #menu .inner {

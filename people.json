@@ -79,6 +79,25 @@
     "institution": "Post-doctoral fellow, Max Planck Institute für Radioastronomie"
   },
   {
+    "name": "Venu Prayag",
+    "title":"",
+    "image": "images/VPrayag_BG1.png",
+    "institution": "PhD candidate, University of Cape Town"
+  },
+  {
+    "name": "Denisha Pillay",
+    "title":"",
+    "image": "images/DPillay_BG1.png",
+    "institution": "PhD candidate, Max Planck Institute für Radioastronomie"
+  },
+  {
+    "name": "Atiqur Rahman",
+    "imageLink": "mail-to:rahman@revolutionibus.net",
+    "title":"",
+    "image": "images/ARahman_BG2.png",
+    "institution": "PhD candidate, University of Cape Town"
+  },
+  {
     "name": "Kira Hanmer",
     "title":"",
     "image": "images/KHanmer_BG1.png",
@@ -109,29 +128,10 @@
     "institution": "MSc candidate, North West University"
   },
   {
-    "name": "Venu Prayag",
-    "title":"",
-    "image": "images/VPrayag_BG1.png",
-    "institution": "PhD candidate, University of Cape Town"
-  },
-  {
-    "name": "Denisha Pillay",
-    "title":"",
-    "image": "images/DPillay_BG1.png",
-    "institution": "PhD candidate, Max Planck Institute für Radioastronomie"
-  },
-  {
     "name": "Abigail Thambiran",
     "title":"",
     "image": "images/AThambiran.png",
     "institution": "MSc candidate, University of Cape Town"
-  },
-  {
-    "name": "Atiqur Rahman",
-    "imageLink": "mail-to:rahman@revolutionibus.net",
-    "title":"",
-    "image": "images/ARahman_BG2.png",
-    "institution": "PhD candidate, University of Cape Town"
   }
 ]
 

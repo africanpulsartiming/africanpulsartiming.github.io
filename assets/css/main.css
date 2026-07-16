@@ -2956,6 +2956,14 @@ input, select, textarea {
 				width: 60%;
 			}
 
+			.tiles article.tile-wide {
+				width: 50%;
+			}
+
+			.tiles article.tile-narrow {
+				width: 50%;
+			}
+
 			.tiles article:nth-child(6n - 5):before {
 				background-color: #6fc3df;
 			}

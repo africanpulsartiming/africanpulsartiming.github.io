@@ -49,24 +49,6 @@
     "institution": "University of Cape Town"
   },
   {
-    "name": "Michael Sarkis",
-    "title":"",
-    "image": "images/MSarkis_BG1.png",
-    "institution": "Post-doctoral fellow, Stellenbosch University"
-  },
-  {
-    "name": "Jaikhomba Singha",
-    "title":"",
-    "image": "images/JSingha_BG1.png",
-    "institution": "Post-doctoral fellow, University of Cape Town"
-  },
-  {
-    "name": "Prerna Rana",
-    "title":"",
-    "image": "images/PRana_BG1.png",
-    "institution": "Post-doctoral fellow, University of Cape Town"
-  },
-  {
     "name": "Surajit Kalita",
     "title":"",
     "image": "images/Surajit_BG1.png",
@@ -79,16 +61,46 @@
     "institution": "Post-doctoral fellow, Max Planck Institute für Radioastronomie"
   },
   {
-    "name": "Venu Prayag",
+    "name": "Prerna Rana",
     "title":"",
-    "image": "images/VPrayag_BG1.png",
+    "image": "images/PRana_BG1.png",
+    "institution": "Post-doctoral fellow, University of Cape Town"
+  },
+  {
+    "name": "Michael Sarkis",
+    "title":"",
+    "image": "images/MSarkis_BG1.png",
+    "institution": "Post-doctoral fellow, Stellenbosch University"
+  },
+  {
+    "name": "Jaikhomba Singha",
+    "title":"",
+    "image": "images/JSingha_BG1.png",
+    "institution": "Post-doctoral fellow, University of Cape Town"
+  },
+  {
+    "name": "Kira Hanmer",
+    "title":"",
+    "image": "images/KHanmer_BG1.png",
     "institution": "PhD candidate, University of Cape Town"
+  },
+  {
+    "name": "Kennedy Konga",
+    "title":"",
+    "image": "images/KKonga_BG1.png",
+    "institution": "PhD Candidate, University of Leeds"
   },
   {
     "name": "Denisha Pillay",
     "title":"",
     "image": "images/DPillay_BG1.png",
     "institution": "PhD candidate, Max Planck Institute für Radioastronomie"
+  },
+  {
+    "name": "Venu Prayag",
+    "title":"",
+    "image": "images/VPrayag_BG1.png",
+    "institution": "PhD candidate, University of Cape Town"
   },
   {
     "name": "Atiqur Rahman",
@@ -98,33 +110,33 @@
     "institution": "PhD candidate, University of Cape Town"
   },
   {
-    "name": "Kira Hanmer",
-    "title":"",
-    "image": "images/KHanmer_BG1.png",
-    "institution": "MSc candidate, University of Cape Town"
-  },
-  {
-    "name": "Kennedy Konga",
-    "title":"",
-    "image": "images/KKonga_BG1.png",
-    "institution": "University of Meru"
-  },
-  {
     "name": "Zi Yan Yuwen",
     "title":"",
     "image": "images/Zi_BG1.png",
     "institution": "PhD Candidate, Stellenbosch University"
   },
   {
-    "name": "Trevor Nyambe",
+    "name": "Adam Coelen",
     "title":"",
-    "image": "images/Trevor_BG1.png",
-    "institution": "MSc candidate, North West University"
+    "image": "images/ACoelen.png",
+    "institution": "MSc candidate, University of Cape Town"
   },
   {
     "name": "Thulo Letsele",
     "title":"",
     "image": "images/Thulo_BG1.png",
+    "institution": "MSc candidate, North West University"
+  },
+  {
+    "name": "Emil Meintjes",
+    "title":"",
+    "image": "images/EMeintjes.png",
+    "institution": "MSc candidate, University of Cape Town"
+  },
+  {
+    "name": "Trevor Nyambe",
+    "title":"",
+    "image": "images/Trevor_BG1.png",
     "institution": "MSc candidate, North West University"
   },
   {
@@ -134,4 +146,3 @@
     "institution": "MSc candidate, University of Cape Town"
   }
 ]
-

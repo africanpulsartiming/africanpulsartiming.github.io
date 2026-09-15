@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=ranade@300&display=swap" rel="stylesheet">
+  <title>IPTA 2026 Student Week — Workshop Programme &amp; Materials</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      margin: 0;
+      padding: 3rem 2.5rem 4rem 2.5rem;
+      background-color: #1C2642;
+      color: #c8d3e8;
+    }
+    h1 {
+      font-family: 'Ranade', sans-serif;
+      font-size: 2rem;
+      font-weight: 300;
+      color: white;
+      margin-bottom: 0.3rem;
+    }
+    .subtitle {
+      font-size: 0.9rem;
+      color: #a0aec0;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Intro / materials note box */
+    .rec-note {
+      font-size: 0.85rem;
+      color: #a0aec0;
+      background-color: #182038;
+      border: 1px solid rgba(255, 119, 53, 0.3);
+      border-radius: 4px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1.2rem;
+      line-height: 1.55;
+    }
+    .rec-note a { color: #ff9f6a; }
+
+    /* Installation & materials section */
+    .materials-section {
+      margin-bottom: 3.5rem;
+    }
+    .materials-section h2 {
+      font-family: 'Ranade', sans-serif;
+      font-weight: 300;
+      font-size: 1.3rem;
+      color: white;
+      margin-bottom: 0.9rem;
+    }
+    .materials-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .material-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      background-color: #243059;
+      border-radius: 3px;
+      padding: 0.6rem 0.9rem;
+    }
+    .material-title {
+      font-size: 0.88rem;
+      color: #e6ebf5;
+    }
+    .material-links {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    /* Day sections */
+    .day-heading {
+      font-family: 'Ranade', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: white;
+      margin-bottom: 0.3rem;
+    }
+    .day-theme {
+      font-size: 0.95rem;
+      color: #a0aec0;
+      font-weight: 300;
+      margin-bottom: 1.6rem;
+    }
+    .day-section {
+      margin-bottom: 3rem;
+    }
+
+    /* Session block */
+    .session {
+      background-color: #243059;
+      border-left: 3px solid #ff7735;
+      border-radius: 0 3px 3px 0;
+      padding: 0.8rem 1rem;
+      margin-bottom: 0.9rem;
+    }
+    .session.discussion {
+      border-left-color: rgba(255,119,53,0.6);
+      background-color: #1e2840;
+    }
+    .session-title {
+      font-size: 1rem;
+      font-weight: 400;
+      color: white;
+    }
+    .session-speaker {
+      font-size: 0.85rem;
+      color: #c8d3e8;
+      font-weight: 300;
+      margin-top: 0.25rem;
+    }
+
+    /* Type badges */
+    .type-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      border-radius: 3px;
+      padding: 0.05rem 0.4rem;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+      white-space: nowrap;
+      font-weight: 400;
+    }
+    .type-lecture    { background: rgba(100,150,255,0.15); color: #8ab4ff; border: 1px solid rgba(100,150,255,0.35); }
+    .type-tutorial   { background: rgba(100,220,150,0.15); color: #7ddaa8; border: 1px solid rgba(100,220,150,0.35); }
+    .type-combined   { background: rgba(190,140,255,0.15); color: #c8a0ff; border: 1px solid rgba(190,140,255,0.35); }
+    .type-discussion { background: rgba(255,119,53,0.12);  color: #e2a07a; border: 1px solid rgba(255,119,53,0.35); }
+
+    /* Resource pill links */
+    .resource-links {
+      margin-top: 0.6rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .rec-link {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: #ff9f6a;
+      text-decoration: none;
+      border: 1px solid rgba(255, 119, 53, 0.45);
+      border-radius: 3px;
+      padding: 0.15rem 0.55rem;
+      white-space: nowrap;
+    }
+    .rec-link:hover { background: rgba(255, 119, 53, 0.16); color: #ffb98c; }
+    .rec-link.slides {
+      color: #9fb0d0;
+      border-color: rgba(120, 150, 200, 0.4);
+    }
+    .rec-link.slides:hover { background: rgba(120, 150, 200, 0.16); color: #c6d2ea; }
+    .rec-link.notebook {
+      color: #7ddaa8;
+      border-color: rgba(100, 220, 150, 0.4);
+    }
+    .rec-link.notebook:hover { background: rgba(100, 220, 150, 0.16); color: #9ee8bd; }
+    .rec-link.dl {
+      padding: 0.15rem 0.4rem;
+      font-size: 0.75rem;
+      line-height: 1;
+    }
+    .rec-link.pending {
+      color: #6a7a9a;
+      border: 1px dashed rgba(106, 122, 154, 0.45);
+      font-style: italic;
+      cursor: default;
+    }
+
+    /* Multi-notebook sub-list (e.g. DISCOVERY) */
+    .notebook-list {
+      margin-top: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .notebook-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      background: rgba(0,0,0,0.15);
+      border-radius: 3px;
+      padding: 0.35rem 0.6rem;
+    }
+    .notebook-item .nb-title {
+      font-size: 0.78rem;
+      color: #c8d3e8;
+    }
+    .notebook-item .nb-links {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 700px) {
+      body { padding: 2rem 1.2rem 3rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>IPTA 2026 Student Week — Workshop Programme &amp; Materials</h1>
+<p class="subtitle">Pulsar Timing Array Student Workshop &nbsp;|&nbsp; June 2026, North West University, Potchefstroom, South Africa</p>
+
+<div class="materials-section">
+  <h2>Installation &amp; Workshop Materials</h2>
+  <div class="rec-note">
+    Before working through the sessions below, set up your environment using the Virtual Machine (VM) guides and
+    installation files linked here. Per-session slides and notebooks are linked further down. Large per-pulsar
+    datasets and software containers used by the tutorials are not hosted here — they are already included in the VM.
+    <strong>Recording</strong> links are still placeholders to be filled in once recordings are available.
+  </div>
+  <div class="materials-list">
+    <div class="material-item">
+      <span class="material-title">VM installation guide (PDF)</span>
+      <div class="material-links">
+        <a class="rec-link" href="https://ipta4gw.org/workshop/vm/docs/iptaVMlite_quickstart.pdf">Quickstart</a>
+        <a class="rec-link" href="https://ipta4gw.org/workshop/vm/docs/iptaVMlite_manual.pdf">Full manual</a>
+      </div>
+    </div>
+    <div class="material-item">
+      <span class="material-title">VM installation files &amp; README</span>
+      <div class="material-links">
+        <a class="rec-link notebook" href="https://ipta4gw.org/workshop/vm/5-2026/">Download files</a>
+        <a class="rec-link" href="https://ipta4gw.org/workshop/vm/5-2026/README.html">README</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ DAY 1 ═══════════════════════════════ -->
+<div class="day-section">
+  <div class="day-heading">Day 1</div>
+  <div class="day-theme">Pulsars and Timing</div>
+
+  <div class="session discussion">
+    <div class="session-title">Overview and Programme <span class="type-badge type-discussion">Discussion</span></div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/IPTA%202026%20student%20week%20intro.pdf">Slides</a>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">Introduction to Radio Telescopes <span class="type-badge type-lecture">Lecture</span></div>
+    <div class="session-speaker">Daniel Reardon</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Reardon_radio_telescopes_ipta2026.pdf">Slides</a>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">Introduction to Pulsars <span class="type-badge type-lecture">Lecture</span></div>
+    <div class="session-speaker">Marisa Geyer</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/IPTA2026_Introduction_to_Pulsars_MGeyer.pdf">Slides</a>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">Introduction to Pulsar Timing <span class="type-badge type-lecture">Lecture</span></div>
+    <div class="session-speaker">Mayuresh Surnis</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Introduction%20to%20Pulsar%20Timing%20IPTA%202026%20Surnis.pdf">Slides</a>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">Tutorial on PSRCHIVE + Bonus activity <span class="type-badge type-tutorial">Tutorial</span></div>
+    <div class="session-speaker">Debabrata Deb &amp; Hendrik Combrinck</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Tutorial-materials/PSRCHIVE/IPTA_SW_PSRCHIVE.pdf">Tutorial guide (PDF)</a>
+      <a class="rec-link slides" href="IPTA2026_Tutorial-materials/PSRCHIVE/WALKTHROUGH.md">Walkthrough</a>
+      <a class="rec-link slides" href="IPTA2026_Tutorial-materials/PSRCHIVE/CHEATSHEET.md">Cheatsheet</a>
+    </div>
+    <div class="notebook-list">
+      <div class="notebook-item">
+        <span class="nb-title">PSRCHIVE Python</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/PSRCHIVE/psrchive_python.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/PSRCHIVE/psrchive_python.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">Pulse Portraiture</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/PSRCHIVE/pulseportraiture.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/PSRCHIVE/pulseportraiture.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">Tutorial on timing with PINT &amp; TEMPO2 + Bonus activity <span class="type-badge type-tutorial">Tutorial</span></div>
+    <div class="session-speaker">Deborah Good, Prerna Rana</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Tutorial-materials/Timing-PINT-TEMPO2/T2timing_tutorial_guide.pdf">TEMPO2 guide (PDF)</a>
+    </div>
+    <div class="notebook-list">
+      <div class="notebook-item">
+        <span class="nb-title">1 &mdash; New Pulsars</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/Timing-PINT-TEMPO2/01_TimingNewPulsars.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/Timing-PINT-TEMPO2/01_TimingNewPulsars.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">2 &mdash; Known Pulsars</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/Timing-PINT-TEMPO2/02_TimingKnownPulsars.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/Timing-PINT-TEMPO2/02_TimingKnownPulsars.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">2.5 &mdash; IPTA Style</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/Timing-PINT-TEMPO2/02.5_TimingIPTAStyle.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/Timing-PINT-TEMPO2/02.5_TimingIPTAStyle.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">3 &mdash; Not Quite Noise</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/Timing-PINT-TEMPO2/03_Not_Quite_Noise.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/Timing-PINT-TEMPO2/03_Not_Quite_Noise.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">Bonus &mdash; guide &amp; data</span>
+        <span class="nb-links">
+          <a class="rec-link slides" href="IPTA2026_Tutorial-materials/Timing-DataCombination/StudentWorkshopSlides_2023.pdf">Guide (PDF)</a>
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/Timing-DataCombination/data_and_pars.zip">Data &amp; par files (zip)</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">Bonus &mdash; PINT intro</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/Timing-DataCombination/00_PINT_tutorial.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/Timing-DataCombination/00_PINT_tutorial.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">Bonus &mdash; Data Combination</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/Timing-DataCombination/01_DataCombination_tutorial.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/Timing-DataCombination/01_DataCombination_tutorial.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ DAY 2 ═══════════════════════════════ -->
+<div class="day-section">
+  <div class="day-heading">Day 2</div>
+  <div class="day-theme">PTA Noise Modeling</div>
+
+  <div class="session">
+    <div class="session-title">Introduction to Bayesian Inference <span class="type-badge type-combined">Lecture + Tutorial</span></div>
+    <div class="session-speaker">Bjorn Larsen</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Bayesian%20Inference.pdf">Slides</a>
+    </div>
+    <div class="notebook-list">
+      <div class="notebook-item">
+        <span class="nb-title">Bayesian Tutorial</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/Bayesian-Inference/bayes_tutorial.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/Bayesian-Inference/bayes_tutorial.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/Bayesian-Inference/h_z_measurements.feather">Data</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">Introduction to Noise Analysis in PTAs <span class="type-badge type-lecture">Lecture</span></div>
+    <div class="session-speaker">Abhimanyu Susobhanan</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Noise%20Processes%20in%20Pulsar%20Timing%20-%20IPTA%20Student%20Week%202026.pdf">Slides</a>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">Introduction and tutorial on SPNA with DISCOVERY + Bonus activity <span class="type-badge type-combined">Lecture + Tutorial</span></div>
+    <div class="session-speaker">Daniel Reardon</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Discovery%20introduction%20IPTA2026.pdf">Slides</a>
+      <a class="rec-link slides" href="IPTA2026_Tutorial-materials/DISCOVERY/README.md">Tutorial README</a>
+    </div>
+    <div class="notebook-list">
+      <div class="notebook-item">
+        <span class="nb-title">01 &mdash; Make feathers</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/DISCOVERY/01_make_feathers.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/DISCOVERY/01_make_feathers.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+          <a class="rec-link slides" href="IPTA2026_Tutorial-materials/DISCOVERY/expected_outputs/01_make_feathers.pdf">Expected output</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">02 &mdash; Basic noise model</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/DISCOVERY/02_basic_noise_model.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/DISCOVERY/02_basic_noise_model.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+          <a class="rec-link slides" href="IPTA2026_Tutorial-materials/DISCOVERY/expected_outputs/02_basic_noise_model.pdf">Expected output</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">03 &mdash; Custom noise model</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/DISCOVERY/03_custom_noise_model.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/DISCOVERY/03_custom_noise_model.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+          <a class="rec-link slides" href="IPTA2026_Tutorial-materials/DISCOVERY/expected_outputs/03_custom_noise_model.pdf">Expected output</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">04 &mdash; Deterministic models</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/DISCOVERY/04_deterministic_models.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/DISCOVERY/04_deterministic_models.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+          <a class="rec-link slides" href="IPTA2026_Tutorial-materials/DISCOVERY/expected_outputs/04_deterministic_models.pdf">Expected output</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">05 &mdash; Bonus: hierarchical model</span>
+        <span class="nb-links">
+          <a class="rec-link slides" href="IPTA2026_Tutorial-materials/DISCOVERY/expected_outputs/05_bonus_hierarchical.pdf">Expected output</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">Tutorial on SPNA with ENTERPRISE + Bonus activity <span class="type-badge type-tutorial">Tutorial</span></div>
+    <div class="session-speaker">Valentina Di Marco, Aur&eacute;lien Chalumeau, Nobleson Fernandez</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+    </div>
+    <div class="notebook-list">
+      <div class="notebook-item">
+        <span class="nb-title">Noise in the Wild</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/Noise-analysis-ENTERPRISE/noise_in_the_wild.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/Noise-analysis-ENTERPRISE/noise_in_the_wild.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">Tracking the Herd</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/Noise-analysis-ENTERPRISE/tracking_the_herd.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/Noise-analysis-ENTERPRISE/tracking_the_herd.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">Helper module</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/Noise-analysis-ENTERPRISE/noise_utils.py">Download (.py)</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ DAY 3 ═══════════════════════════════ -->
+<div class="day-section">
+  <div class="day-heading">Day 3</div>
+  <div class="day-theme">PTA &amp; Gravitational Wave Background</div>
+
+  <div class="session">
+    <div class="session-title">Introduction to GWs and PTAs <span class="type-badge type-lecture">Lecture</span></div>
+    <div class="session-speaker">Sarah Vigeland</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Vigeland_GWs.pdf">Slides</a>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">Introduction to GWB, HD curve &amp; other GW signals in PTAs <span class="type-badge type-lecture">Lecture</span></div>
+    <div class="session-speaker">Alberto Sesana</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Sesana_Lecture_IPTA26.pdf">Slides</a>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">Tutorial on GWB Search + Bonus activity <span class="type-badge type-tutorial">Tutorial</span></div>
+    <div class="session-speaker">Aur&eacute;lien Chalumeau and colleagues</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Tutorial-materials/GWB-search/IPTASW2026_GWBTuto_AChalumeau_VM.pdf">Guide (PDF)</a>
+    </div>
+    <div class="notebook-list">
+      <div class="notebook-item">
+        <span class="nb-title">Notebook (VM version)</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/GWB-search/IPTASW2026_GWBTuto_AChalumeau_VM.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/GWB-search/IPTASW2026_GWBTuto_AChalumeau_VM.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">Notebook (standalone)</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/GWB-search/IPTASW2026_GWBTuto_AChalumeau.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/GWB-search/IPTASW2026_GWBTuto_AChalumeau.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">Introduction to IPTA <span class="type-badge type-lecture">Lecture</span></div>
+    <div class="session-speaker">Joris Verbiest</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Verbiest-IPTA2026.pdf">Slides</a>
+    </div>
+  </div>
+
+  <div class="session discussion">
+    <div class="session-title">Writing an observing proposal <span class="type-badge type-discussion">Discussion</span></div>
+    <div class="session-speaker">Lydia Guertin</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Observing-Proposals-Explainer-Guertin.pdf">Slides</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ DAY 4 ═══════════════════════════════ -->
+<div class="day-section">
+  <div class="day-heading">Day 4</div>
+  <div class="day-theme">Other Gravitational Wave Sources</div>
+
+  <div class="session">
+    <div class="session-title">Astrophysical Interpretation of the GWB <span class="type-badge type-lecture">Lecture</span></div>
+    <div class="session-speaker">Hippolyte JH Quelquejay-Leclere</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/HQL%20Lecture%20-%20Astro%20interpretation.pdf">Slides</a>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">Continuous Waves &amp; Burst Signals in PTAs <span class="type-badge type-lecture">Lecture</span></div>
+    <div class="session-speaker">Boris Goncharov</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Goncharov-IPTA-student-week-lecture-2026-06-18.pdf">Slides</a>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">Tutorial on CW Search + Bonus activity <span class="type-badge type-tutorial">Tutorial</span></div>
+    <div class="session-speaker">Anjana Ashok</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+    </div>
+    <div class="notebook-list">
+      <div class="notebook-item">
+        <span class="nb-title">The CW Hunt</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/CW-search/the_cw_hunt.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/CW-search/the_cw_hunt.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">The CW Hunt &mdash; Bonus</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/CW-search/the_cw_hunt_bonus.html" target="_blank" rel="noopener">Notebook</a>
+          <a class="rec-link slides dl" href="IPTA2026_Tutorial-materials/CW-search/the_cw_hunt_bonus.ipynb" download title="Download notebook (.ipynb)">&#8681;</a>
+        </span>
+      </div>
+      <div class="notebook-item">
+        <span class="nb-title">Pulsar data</span>
+        <span class="nb-links">
+          <a class="rec-link notebook" href="IPTA2026_Tutorial-materials/CW-search/hunters.zip">Download (zip)</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">New Physics in PTAs <span class="type-badge type-lecture">Lecture</span></div>
+    <div class="session-speaker">Kai Schmitz</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/schmitz_new_physics.pdf">Slides</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ DAY 5 ═══════════════════════════════ -->
+<div class="day-section">
+  <div class="day-heading">Day 5</div>
+  <div class="day-theme">Multimessenger Astrophysics &amp; More</div>
+
+  <div class="session">
+    <div class="session-title">Multimessenger Astrophysics <span class="type-badge type-lecture">Lecture</span></div>
+    <div class="session-speaker">Caitlin Witt</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/MMA%20for%20PTAs.pdf">Slides</a>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="session-title">Introduction to GPTA <span class="type-badge type-lecture">Lecture</span></div>
+    <div class="session-speaker">Serena Valtolina</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+      <a class="rec-link slides" href="IPTA2026_Lecture-slides/SerenaValtolina_gpta.pdf">Slides</a>
+    </div>
+  </div>
+
+  <!--
+  <div class="session discussion">
+    <div class="session-title">Career panel discussion &amp; more <span class="type-badge type-discussion">Discussion</span></div>
+    <div class="session-speaker">Valentina Di Marco and panel</div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+    </div>
+  </div>
+
+  <div class="session discussion">
+    <div class="session-title">Flash presentations by participants <span class="type-badge type-discussion">Discussion</span></div>
+    <div class="resource-links">
+      <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
+    </div>
+  </div>
+  -->
+</div>
+
+</body>
+</html>

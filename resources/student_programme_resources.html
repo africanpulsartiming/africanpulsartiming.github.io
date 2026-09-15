@@ -125,18 +125,22 @@
     /* Type badges */
     .type-badge {
       display: inline-block;
-      font-size: 0.65rem;
-      border-radius: 3px;
-      padding: 0.05rem 0.4rem;
-      margin-left: 0.5rem;
+      font-size: 0.62rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-left: 0.6rem;
       vertical-align: middle;
       white-space: nowrap;
-      font-weight: 400;
+      padding: 0;
+      border: none;
+      background: none;
+      border-radius: 0;
     }
-    .type-lecture    { background: rgba(100,150,255,0.15); color: #8ab4ff; border: 1px solid rgba(100,150,255,0.35); }
-    .type-tutorial   { background: rgba(100,220,150,0.15); color: #7ddaa8; border: 1px solid rgba(100,220,150,0.35); }
-    .type-combined   { background: rgba(190,140,255,0.15); color: #c8a0ff; border: 1px solid rgba(190,140,255,0.35); }
-    .type-discussion { background: rgba(255,119,53,0.12);  color: #e2a07a; border: 1px solid rgba(255,119,53,0.35); }
+    .type-lecture    { color: #8ab4ff; }
+    .type-tutorial   { color: #7ddaa8; }
+    .type-combined   { color: #c8a0ff; }
+    .type-discussion { color: #e2a07a; }
 
     /* Resource pill links */
     .resource-links {
@@ -168,6 +172,11 @@
       border-color: rgba(100, 220, 150, 0.4);
     }
     .rec-link.notebook:hover { background: rgba(100, 220, 150, 0.16); color: #9ee8bd; }
+    .rec-link.slidedeck {
+      color: #c8a0ff;
+      border-color: rgba(190, 140, 255, 0.45);
+    }
+    .rec-link.slidedeck:hover { background: rgba(190, 140, 255, 0.16); color: #d9bfff; }
     .rec-link.dl {
       padding: 0.15rem 0.4rem;
       font-size: 0.75rem;
@@ -252,7 +261,7 @@
     <div class="session-title">Overview and Programme <span class="type-badge type-discussion">Discussion</span></div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/IPTA%202026%20student%20week%20intro.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/IPTA%202026%20student%20week%20intro.pdf">Slides</a>
     </div>
   </div>
 
@@ -261,7 +270,7 @@
     <div class="session-speaker">Daniel Reardon</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Reardon_radio_telescopes_ipta2026.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/Reardon_radio_telescopes_ipta2026.pdf">Slides</a>
     </div>
   </div>
 
@@ -270,7 +279,7 @@
     <div class="session-speaker">Marisa Geyer</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/IPTA2026_Introduction_to_Pulsars_MGeyer.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/IPTA2026_Introduction_to_Pulsars_MGeyer.pdf">Slides</a>
     </div>
   </div>
 
@@ -279,7 +288,7 @@
     <div class="session-speaker">Mayuresh Surnis</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Introduction%20to%20Pulsar%20Timing%20IPTA%202026%20Surnis.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/Introduction%20to%20Pulsar%20Timing%20IPTA%202026%20Surnis.pdf">Slides</a>
     </div>
   </div>
 
@@ -381,7 +390,7 @@
     <div class="session-speaker">Bjorn Larsen</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Bayesian%20Inference.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/Bayesian%20Inference.pdf">Slides</a>
     </div>
     <div class="notebook-list">
       <div class="notebook-item">
@@ -400,7 +409,7 @@
     <div class="session-speaker">Abhimanyu Susobhanan</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Noise%20Processes%20in%20Pulsar%20Timing%20-%20IPTA%20Student%20Week%202026.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/Noise%20Processes%20in%20Pulsar%20Timing%20-%20IPTA%20Student%20Week%202026.pdf">Slides</a>
     </div>
   </div>
 
@@ -409,7 +418,7 @@
     <div class="session-speaker">Daniel Reardon</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Discovery%20introduction%20IPTA2026.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/Discovery%20introduction%20IPTA2026.pdf">Slides</a>
       <a class="rec-link slides" href="IPTA2026_Tutorial-materials/DISCOVERY/README.md">Tutorial README</a>
     </div>
     <div class="notebook-list">
@@ -495,7 +504,7 @@
     <div class="session-speaker">Sarah Vigeland</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Vigeland_GWs.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/Vigeland_GWs.pdf">Slides</a>
     </div>
   </div>
 
@@ -504,7 +513,7 @@
     <div class="session-speaker">Alberto Sesana</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Sesana_Lecture_IPTA26.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/Sesana_Lecture_IPTA26.pdf">Slides</a>
     </div>
   </div>
 
@@ -538,7 +547,7 @@
     <div class="session-speaker">Joris Verbiest</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Verbiest-IPTA2026.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/Verbiest-IPTA2026.pdf">Slides</a>
     </div>
   </div>
 
@@ -547,7 +556,7 @@
     <div class="session-speaker">Lydia Guertin</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Observing-Proposals-Explainer-Guertin.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/Observing-Proposals-Explainer-Guertin.pdf">Slides</a>
     </div>
   </div>
 </div>
@@ -562,7 +571,7 @@
     <div class="session-speaker">Hippolyte JH Quelquejay-Leclere</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/HQL%20Lecture%20-%20Astro%20interpretation.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/HQL%20Lecture%20-%20Astro%20interpretation.pdf">Slides</a>
     </div>
   </div>
 
@@ -571,7 +580,7 @@
     <div class="session-speaker">Boris Goncharov</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/Goncharov-IPTA-student-week-lecture-2026-06-18.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/Goncharov-IPTA-student-week-lecture-2026-06-18.pdf">Slides</a>
     </div>
   </div>
 
@@ -610,7 +619,7 @@
     <div class="session-speaker">Kai Schmitz</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/schmitz_new_physics.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/schmitz_new_physics.pdf">Slides</a>
     </div>
   </div>
 </div>
@@ -625,7 +634,7 @@
     <div class="session-speaker">Caitlin Witt</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/MMA%20for%20PTAs.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/MMA%20for%20PTAs.pdf">Slides</a>
     </div>
   </div>
 
@@ -634,7 +643,7 @@
     <div class="session-speaker">Serena Valtolina</div>
     <div class="resource-links">
       <span class="rec-link pending" title="Recording not yet available">&#9654; Recording &mdash; coming soon</span>
-      <a class="rec-link slides" href="IPTA2026_Lecture-slides/SerenaValtolina_gpta.pdf">Slides</a>
+      <a class="rec-link slidedeck" href="IPTA2026_Lecture-slides/SerenaValtolina_gpta.pdf">Slides</a>
     </div>
   </div>
 
